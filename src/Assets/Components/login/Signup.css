@@ -1,0 +1,121 @@
+.logins__container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, purple, blueviolet);
+    box-sizing: border-box;
+}
+::-webkit-scrollbar
+{
+    display: none;
+}
+.container__logins{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    background: black;
+    padding: 20px;
+    border-radius: 0.8rem;
+    align-items: center;
+    transition: all 1300ms ease;
+}
+.login-input{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    outline: none;
+}
+label{
+    display: flex;
+    margin: 10px;
+    /* padding: 1px; */
+    border: 2px solid blueviolet;
+}
+label input{
+    outline: none;
+    padding: 0px 20px;
+    border-style: none;
+    text-align: left;
+    font-family: poppins;
+    width: 100%;
+}
+.icon-color{
+    color: blueviolet;
+    font-size: 30px;
+}
+p{
+    color: white;
+    text-align: center;
+    /* margin-left: 10px; */
+    margin-bottom: 20px; 
+} 
+.small{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    width: 100%;
+    font-family: poppins;
+    font-weight: bold; 
+    background: blueviolet;
+    transition: all 400ms ease;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+.small:focus{
+    background: white;
+}
+h3{
+    color: white;
+    font-family: poppins;
+}
+.social__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social__icons:focus{
+    color: white;
+    font-size: 26px;
+}
+.social__icons .icon-color{
+    margin-left: 10px;
+}
+h3 a{
+    text-decoration: none;
+    color: blueviolet;
+}
+h3 Link:focus{
+    color: white;
+}
+.social{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.social p{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: poppins;
+    border: 2px solid blueviolet;
+    justify-content: space-between;
+    padding: 2px;
+    border-radius: 0.8rem;
+    width: 100%;
+    text-align: center;
+}
+h1{
+    color: blueviolet;
+    font-weight: 800;
+    font-size: 50px;
+}
+.social p .icon-color{
+    font-size: 20px;
+}
+p{
+    font-family: poppins;
+}
