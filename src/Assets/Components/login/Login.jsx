@@ -13,7 +13,6 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 
 const Login = () => {
-
 const [open, setOpen] = useState(false);
 const handleClose = () => {
   setOpen(false);
@@ -42,7 +41,8 @@ const handleToggle = () => {
                 {/* <input type="password" autoComplete="off"  onChange={(e) => setPwd(e.target.value)} name="********" id="paswword" value={pwd} required/> */}
                 </label>
                  <p>forgot password <span> reset now!!</span></p>
-                <button  onClick={handleToggle} className='small' > <Link to="/Homepage"> Login  </Link></button>
+                 <Link  to="/Homepage">
+                <button onClick={handleToggle} className='small' >  Login </button>
                 <Backdrop
                   sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
                   open={open}
@@ -50,6 +50,7 @@ const handleToggle = () => {
                 >
                   <CircularProgress color="inherit" />
                 </Backdrop>
+                </Link>
             </form>
             <div className="social__icons">
                 <a href="https://web.facebook.com/adewumi.oreoluwa.7374" target="_/blank"> <FacebookIcon  className='icon-color'/> </a>

@@ -11,7 +11,8 @@ const App = () => {
       <Routes>
         <Route path='/Homepage' element={<Homepage/>}/>
            <Route path="/Signup" element={<Signup/>} />
-           <Route path="/" element={<Login/>} />
+           <Route path="/" exact element={<Login/>} />
+           <Route render={()=> <h3>oops 404</h3>}/>
       </Routes>
     </Router>
     </>
